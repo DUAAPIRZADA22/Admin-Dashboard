@@ -11,9 +11,11 @@ import {
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const [darkMode, setDarkMode] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [userName, setUserName] = useState("Duaa");
-  const [shopName, setShopName] = useState("HomeAura");
-  const [profilePic, setProfilePic] = useState("/logo.png");
+
+  // Instead of useState, just use constants
+  const userName = "Duaa";
+  const shopName = "HomeAura";
+  const profilePic = "/logo.png";
 
   return (
     <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"} min-h-screen flex`}>
@@ -101,6 +103,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     </div>
   );
 }
+
 
 
 
