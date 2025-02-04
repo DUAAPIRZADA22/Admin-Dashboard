@@ -37,7 +37,7 @@ const Page = () => {
           </SignedIn>
           <SignedOut>
             <Link
-              href="https://fast-foal-29.accounts.dev/sign-in"
+              href="http://localhost:3000/auth/signin"
               className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-xl font-bold rounded-lg hover:from-pink-600 hover:to-pink-800 transition duration-300 shadow-lg hover:shadow-2xl"
             >
               Start Selling

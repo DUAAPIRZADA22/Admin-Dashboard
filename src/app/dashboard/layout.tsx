@@ -21,7 +21,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"} min-h-screen flex`}>
       {/* Sidebar */}
       <div className={`w-64 p-5 ${darkMode ? "bg-gray-800" : "bg-white"} shadow-md min-h-screen`}>
-        <h2 className="text-2xl font-bold mb-6 text-center">Seller Dashboard</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">HomeAura</h2>
         
         <nav className="space-y-4">
           <Link href="/dashboard" className="flex items-center gap-3 p-3 rounded-lg hover:bg-pink-300 transition">
