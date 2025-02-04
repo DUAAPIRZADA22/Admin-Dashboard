@@ -1,9 +1,10 @@
-"use client"; // Client Component ke liye zaroori
-
+"use client";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { useState, useEffect } from "react";
+import { metadata } from "../../metadata"; 
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,9 +22,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   
-  const [userName, setUserName] = useState("");
-  const [shopName, setShopName] = useState("");
-  const [profilePic, setProfilePic] = useState("");
+  // States for user details (if needed in the future)
+  const [userName] = useState("");
+  const [shopName] = useState("");
+  const [profilePic] = useState("");
 
   useEffect(() => {
     console.log("Dashboard layout mounted");
@@ -39,3 +41,4 @@ export default function RootLayout({
     </html>
   );
 }
+
